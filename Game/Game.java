@@ -44,8 +44,10 @@ public class Game {
         calculateComputerChoice();
         if(resultModel.values()[computerChoice - 1].getVal() == this.playerChoice){
             return "You win !";
+        } else if(computerChoice == this.playerChoice) {
+            return "None win... !";
         } else {
-            return "You lose !";
+            return "You lose";
         }
     }
 }
